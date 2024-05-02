@@ -1,10 +1,17 @@
+import { Outlet } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className=" text-gray-500 ">
-     E-commerce Website
-    </div>
+    <>
+    <Header/>
+    <main>
+    <Outlet/>
+    </main>
+    <Footer/>
+    </>
   );
 }
 
