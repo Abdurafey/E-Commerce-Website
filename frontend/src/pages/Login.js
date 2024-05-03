@@ -53,13 +53,13 @@ const Login = () => {
   //   }
   // };
 
-  // console.log("data login", data);
+  console.log("data login", data);
 
   return (
     <section id="login ">
-      <div className="mx-auto container p-4 min-h-screen">
-        <div className="bg-white p-5 w-full max-w-sm mx-auto">
-          <div className="w-20 h-20 mx-auto">
+      <div className="mx-auto container p-4 ">
+        <div className="bg-white p-5 w-full max-w-sm mx-auto ">
+          <div className="w-20 h-20 mx-auto overflow-hidden rounded-full">
             <img src={loginIcons} alt="login icons" />
           </div>
 
@@ -93,7 +93,7 @@ const Login = () => {
                   className="cursor-pointer text-xl"
                   onClick={() => setShowPassword((preve) => !preve)}
                 >
-                  <span>{showPassword ? <FaEyeSlash /> : <FaEye />}</span>
+                  <span>{showPassword ? <FaEye /> : <FaEyeSlash />}</span>
                 </div>
               </div>
               <Link
@@ -115,7 +115,7 @@ const Login = () => {
           <p className="my-5 ">
             Don't have account?
             <Link
-              to={"/sign-up"}
+              to={"/signUp"}
               className=" text-red-600 hover:text-red-700 hover:underline p-2"
             >
               Sign up

@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/Home"
 import Login from "../pages/Login";
 import ForgotPassowrd from "../pages/ForgetPassword";
+import SignUp from "../pages/SignUp";
 // import ForgotPassowrd from "../pages/ForgotPassowrd";
 // import SignUp from "../pages/SignUp";
 // import AdminPanel from "../pages/AdminPanel";
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "", element: <Home /> },
       { path: "login", element: <Login /> },
       { path: "forgot-password", element: <ForgotPassowrd /> },
+      { path: "signUp", element: <SignUp /> },
     ],
   },
 ]);
